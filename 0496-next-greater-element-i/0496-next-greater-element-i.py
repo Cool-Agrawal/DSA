@@ -15,6 +15,7 @@ class Solution:
             for j in range(n):
                 if nums1[i] == nums2[j]:
                     res.append(ans[j])
+                    break
                 
         return res
 
