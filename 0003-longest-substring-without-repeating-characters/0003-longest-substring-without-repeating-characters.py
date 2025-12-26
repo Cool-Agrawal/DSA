@@ -8,5 +8,5 @@ class Solution:
                 seen.remove(s[left])
                 left += 1
             seen.add(s[right])
-            res = max(res,len(seen))
+            res = max(res,right-left+1)
         return res
