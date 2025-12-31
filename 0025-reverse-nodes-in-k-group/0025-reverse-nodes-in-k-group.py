@@ -23,3 +23,13 @@ class Solution:
             curr = temp
         head.next = self.reverseKGroup(curr,k)
         return prev
+    
+    def reverse(self,head):
+        prev = None
+        curr = head
+        while curr:
+            temp = curr.next
+            curr.next = prev
+            prev = curr
+            curr = temp
+        return prev
