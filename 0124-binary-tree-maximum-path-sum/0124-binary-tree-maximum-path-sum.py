@@ -9,6 +9,7 @@ class Solution:
         self.path = float("-inf")
         self.height(root)
         return self.path
+        
     def height(self,root):
         if root is None:
             return 0
@@ -16,4 +17,3 @@ class Solution:
         rh = max(0,self.height(root.right))
         self.path = max(self.path,lh+rh+root.val)
         return max(lh,rh)+root.val
-        
