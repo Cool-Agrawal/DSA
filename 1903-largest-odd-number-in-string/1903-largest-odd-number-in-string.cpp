@@ -5,15 +5,9 @@ public:
         int a = -1;
         for(int i=n;i>=0;i--){
             if ((num[i] - '0')%2 != 0){
-                 a = i;
-                break;
-
+                return num.substr(0,i+1);
             }
         }
-        string s = "";
-        for(int i=0;i<=a;i++){
-            s += num[i];
-        }
-        return s;
+        return "";
     }
 };
