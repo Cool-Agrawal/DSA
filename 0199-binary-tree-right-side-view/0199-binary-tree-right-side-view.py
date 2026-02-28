@@ -10,7 +10,6 @@ class Solution:
             return []
         q = []
         res = []
-        l = []
         q.append(root)
         while q:
             n = len(q)
